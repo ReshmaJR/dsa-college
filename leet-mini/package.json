@@ -1,0 +1,18 @@
+{
+  "name": "leet-mini",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev -- --host",
+    "seed": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Mini LeetCode for college with streaks and leaderboards",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
